@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Section</title>
+  <link rel="stylesheet" href="music.css">
+</head>
+<body>
+  <!-- Music Player Container -->
+  <div id="music-player">
+    <!-- Audio Player -->
+    <audio id="audio-player" controls>
+      <source src="path/to/default-song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <!-- Recently Played Display -->
+    <div id="recently-played">Recently Played: None</div>
+  </div>
+
+  <!-- Optional: Music Playlist or Shuffle Button -->
+  <div id="playlist">
+    <button id="shuffle-btn">Shuffle & Play</button>
+    <!-- List your tracks in an array via JS or embed a simple list here -->
+  </div>
+
+  <script src="music.js"></script>
+</body>
+</html>

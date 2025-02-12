@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="png" href="images/icon/Untitled design.png" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge" />
+    <title> Welcome to Vidhya</title>
+    <meta name="desciption" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header id="header">
+      <nav>
+        <div class="logo"><img src="images/icon/logo-design.png" alt="logo" /></div >
+        <ul>
+          <li><a class="active" href="">Home</a></li>
+          <li><a href="#services_section">Services</a></li>
+          <li><a href="#contactus_section">Contact</a></li>
+        </ul>
+        <div class="srch">
+          <input type="text" class="search" placeholder="Search here..." /><img
+            src="images/icon/search.jpg"
+            alt="search"
+            onclick="slide()"
+          />
+        </div>
+        <a class="get-started" href="login.html">Get Started</a>
+        <img
+          src="images/icon/menu.png"
+          class="menu"
+          onclick="sideMenu(0)"
+          alt="menu"
+        />
+      </nav>
+      <div class="head-container">
+        <div class="quote">
+          <p>
+            The beautiful thing about learning is that nobody can take it away
+            from you
+          </p>
+          <h5>
+            VIDHYA PROVIEDES A STRAIGHT FORWARD PATH TO OUR USERS, IF YOU ARE STILL CONFUSED WHICH FACULTY
+            YOU SHOULD FOLLOW AND WHICH COURSE YOU SHOULD TAKE; FORGOT ALL THE THINGS AND START WITH US, WE WILL HELP TO
+            ARCHIVE YOUR GOAL !
+          </h5>
+          <div class="play">
+            <img src="images/icon/play.png" alt="play" /><span
+              ><a
+                href=""
+                target="_blank"
+                >Watch Now</a
+              ></span
+            >
+          </div>
+        </div>
+        <div class="svg-image">
+          <img src="images/extra/svg2.png" alt="svg" />
+        </div>
+      </div>
+      <div class="side-menu" id="side-menu">
+        <div class="close" onclick="sideMenu(1)">
+          <img src="images/icon/close.png" alt="" />
+        </div>
+        
+        <ul>
+          <li><a href="#about_section">Motivation</a></li>
+          <li><a href="#services_section">Services</a></li>
+          <li><a href="#contactus_section">Contact</a></li>
+          <li><a href="#feedBACK">Feedback</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Some Popular Subjects -->
+    <div class="title">
+      <span>Popular course on Vidhya </span>
+    </div>
+    <br /><br />
+    <div class="course">
+      <center>
+        <div class="cbox">
+          <div class="det">
+            <a href="subjects/jee.html"
+              ><img src="images/courses/book.png" />JEE Preparation</a>
+          </div>
+          <div class="det">
+            <a href="subjects/gate.html"
+              ><img src="images/courses/d1.png" />GATE Preparation</a
+            >
+          </div>
+          <div class="det">
+            <a href="subjects/jee.html#sample_papers"
+              ><img src="images/courses/paper.png" />Sample Papers</a
+            >
+          </div>
+          <div class="det">
+            <a href="subjects/quiz.html"
+              ><img src="images/courses/d1.png" />Daily Quiz</a
+            >
+          </div>
+        </div>
+      </center>
+      <div class="cbox">
+        <div class="det">
+          <a href="subjects/computer_courses.html"
+            ><img src="images/courses/computer.png" />Computer Courses</a
+          >
+        </div>
+        <div class="det">
+          <a href="subjects/computer_courses.html#data"
+            ><img src="images/courses/data.png" />Data Structures</a
+          >
+        </div>
+        <div class="det">
+          <a href="subjects/computer_courses.html#algo"
+            ><img src="images/courses/algo.png" />Algorithm</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="diffSection" id="about_section">
+      <center>
+        <p style="font-size: 50px; padding: 100px">
+          Motivation
+        </p>
+      </center>
+      <div class="about-content">
+        <div class="side-image">
+          <img class="sideImage" src="images/extra/page.jpg" />
+        </div>
+        <!---->
+        <div class="side-text">
+          
+          <p>
+            "Conque yourself and the whole universe is yours."<br />
+          </p>
+          <h3>             -SWAMI VIVEKANAND</h3>
+          <p>
+            "An investment in knowledge pays the best intrest."<br />
+          </p>
+          <h3>             -BENJAMIN FRANKLIN</h3>
+          
+      
+
+        </div>
+        
+      </div>
+    </div>
+<!-- 
+    Music
+    <div class="diffSection" id="music_section">
+      <center>
+        <p style="font-size: 50px; padding: 100px; padding-bottom: 40px">
+          Music
+        </p>
+      </center>
+      <div class="content">
+        <p>
+          “Music and learning are like two notes in perfect harmony—one fuels the mind, the other fuels the soul.”
+        </p>
+      </div>
+    </div>
+    <div class="extra">
+      <Play>We're continuously adding smooth songs for your soul, 
+        Play them into your background and Enjoy coding.</p>
+
+      <div class="smbox">
+        <span>
+          <center>
+            <a href="https://youtube.com/playlist?list=PLNTEDKdJC5hP207k82alr0YnIyMccA7Jd&si=Ze9r5Pv6q3DIv-yx" target="_blank"></a>
+            <div class="data">Work music</div>
+            <div class="det">15Hz Binaural Music</div>
+          </center>
+        </span>
+
+        <span>
+          <center>
+            <a href=""
+            <div class="data">Study Music</div>
+            <div class="det">40Hz binural beats</div>
+          </center></span>
+        
+        <span>
+          <center>
+            <div class="data">Headache Relief Music</div>
+            <div class="det">12Hz Delta beats</div>
+          </center>
+        </span>
+        
+        <span>
+          <center>
+            <a href="https://youtu.be/2fW0hVHJnKA?si=oUCoMeH2hhS7p4Q-"
+            <div class="data">Positive thinking Music</div>
+            <div class="det">8Hz Alpha Waves</div>
+          </center>
+        </span>
+      </div>
+    </div> -->
+
+    
+
+    <!-- SERVICES -->
+    <div class="service-swipe">
+      <div class="diffSection" id="services_section">
+        <center>
+          <p
+            style="
+              font-size: 50px;
+              padding: 100px;
+              padding-bottom: 40px;
+              color: #fff;
+            "
+          >
+            Services
+          </p>
+        </center>
+      </div>
+      <a href="subjects/computer_courses.html">
+        <div class="s-card">
+          <img src="images/icon/computer-courses.png" />
+          <p>Free Online Computer Courses</p>
+        </div></a>
+
+      <a href="subjects/jee.html">
+        <div class="s-card">
+          <img src="images/icon/brainbooster.png" />
+          <p>Building Concepts for Competitive Exams</p>
+        </div></a>
+      <a href="#">
+        <div class="s-card">
+          <img src="images/icon/online-tutorials.png" />
+          <p>Online Video Lectures</p>
+        </div></a>
+      
+      <a href="subjects/jee.html#sample_papers"
+        ><div class="s-card">
+          <img src="images/icon/papers.jpg" />
+          <p>Sample Papers of Various Competitive Exams</p>
+        </div></a>
+      
+      <a href="#"
+        ><div class="s-card">
+          <img src="images/icon/p3.png" />
+          <p>Performance and Ranking Report</p>
+        </div></a>
+      
+      <a href="#contactus_section"
+        ><div class="s-card">
+          <img src="images/icon/discussion.png" />
+          <p>Discussion with Our Tutors & Mentors</p>
+        </div></a>
+      
+      <a href="subjects/quiz.html"
+        ><div class="s-card">
+          <img src="images/icon/q1.png" />
+          <p>Daily Brain Teasing Questions to Improve IQ</p>
+        </div></a>
+      
+      <a href="#contactus_section"
+        ><div class="s-card">
+          <img src="images/icon/help.png" />
+          <p>24x7 Online Support</p>
+        </div></a>
+      
+    </div>
+
+    <!-- Reviews by Students -->
+    <div id="makeitfull">
+      <a href="#review_section"><img src="images/icon/makeitfull2.png" /></a>
+    </div>
+    <div class="review">
+      <div class="diffSection" id="review_section">
+        <center>
+          <p
+            style="
+              font-size: 40px;
+              padding: 100px;
+              padding-bottom: 40px;
+              color: #2e3d49;
+            "
+          >
+            Testimonals
+          </p>
+        </center>
+      </div>
+      <div class="rev-container">
+        <div class="rev-card">
+          <div class="identity">
+            <img src="images/creator/face4.avif" />
+            <p>Sundaram Shukla</p>
+            <h6>Java</h6>
+            <div class="rating">
+            </div>
+          </div>
+          <div class="rev-cont">
+            <!--<p id="title">Review:</p>-->
+            <p id="content">
+              I don't have words to thank this course, 
+              I'm really grateful to have this
+              and website in my daily routine.
+              If you're a mere beginner, then you can trust
+              this course and can put your time into his content.
+              I can assure you that it'll be worth it.
+            </p>
+          </div>
+        </div>
+        <div class="rev-card">
+          <div class="identity">
+            <img src="images/creator/face3.jpg" />
+            <p>Clayton Clair</p>
+            <h6>C/C++</h6>
+          </div>
+          <div class="rev-cont">
+            <!--<p id="title">Review:</p>-->
+            <p id="content">
+              When I was watching "Dear Zindagi", I could relate Sharukh Khan to
+              Arnav Bhaiya. The way Sharukh Khan was giving life lessons to Alia
+              Bhatt, in the same way this systemic path will give coding life lessons
+              which will guide you throughout your code life...
+            </p>
+          </div>
+        </div>
+        <div class="rev-card">
+          <div class="identity">
+            <img src="images/creator/face1.jpg" />
+            <p>Divyansh Joshi</p>
+            <h6>JEE</h6>
+            <div class="rating">
+            </div>
+          </div>
+
+          <div class="rev-cont">
+            <!--<p id="title">Review:</p>-->
+            <p id="content">
+              VIDHYA is an amazing experience for me. I belong to a hindi medium school
+              and had a little experience in JEE but I think it
+              has helped me think things through in a much more analytical
+              manner. Coding is important no matter which branch you are in. It
+              gives you a better understanding about how to approach a
+              problem...
+            </p>
+          </div>
+        </div>
+        <div class="rev-card">
+          <div class="identity">
+            <img src="images/creator/face2.jpg" />
+            <p>Riya Seth</p>
+            <h6>Python</h6>
+            <div class="rating">
+
+            </div>
+          </div>
+          <div class="rev-cont">
+            <!--<p id="title">Review:</p>-->
+            <p id="content">
+              This was my first complete course at coding blocks. I saw these
+              coding course 2024 and loved it, because the coding path that this websites gives
+              you cann't find anywhere. I would certainly recommend this to
+              anyone...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT US -->
+    <div class="diffSection" id="contactus_section">
+      <center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+      <div class="csec"></div>
+      <div class="back-contact">
+        <div class="cc">
+          <form
+            action="mailto:kaushikeemishra1@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label>First Name <span class="imp">*</span></label
+            ><label style="margin-left: 185px"
+              >Last Name <span class="imp">*</span></label
+            ><br />
+            <center>
+              <input
+                type="text"
+                name=""
+                style="margin-right: 10px; width: 175px"
+                required="required"
+              /><input
+                type="text"
+                name="lname"
+                style="width: 175px"
+                required="required"
+              /><br />
+            </center>
+            <label>Email <span class="imp">*</span></label
+            ><br />
+            <input
+              type="email"
+              name="mail"
+              style="width: 100%"
+              required="required"
+            /><br />
+            <label>Message <span class="imp">*</span></label
+            ><br />
+            <input
+              type="text"
+              name="message"
+              style="width: 100%"
+              required="required"
+            /><br />
+            <label>Additional Details</label><br />
+            <textarea name="addtional"></textarea><br />
+            <button type="submit" id="csubmit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="title2" id="feedBACK">
+      <span>Give Feedback</span>
+      <div class="shortdesc2">
+        <p>Please share your valuable feedback to us</p>
+      </div>
+    </div>
+
+    <div class="feedbox">
+      <div class="feed">
+        <form
+          action="mailto:kaushikeemishra1@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label>Your Name</label><br />
+          <input type="text" name="" class="fname" required="required" /><br />
+          <label>Email</label><br />
+          <input type="email" name="mail" required="required" /><br />
+          <label>Additional Details</label><br />
+          <textarea name="addtional"></textarea><br />
+          <button type="submit" id="csubmit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sliding Information -->
+    <marquee
+      style="
+        background: linear-gradient(to right, #ee71d5, #e78ac5);
+        margin-top: 50px;
+      "
+      direction="left"
+      onmouseover="this.stop()"
+      onmouseout="this.start()"
+      scrollamount="20"
+      ><div class="marqu">
+        “In the garden of life, education is the seed that blossoms into the flowers of knowledge and understanding.”
+      </div></marquee
+    >
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <img src="images/icon/vblack.png" style="width: 200px" />
+          <br>
+          <div class="logo"></div>                   
+          <div class="social-media">
+            <a href="#"><img src="images/icon\insta.png" /></a>
+            <a href="#"><img src="images/icon\git.jpg" /></a>
+            
+            <a href="#"><img src="images/icon\linkedin.png" /></a>
+<br>
+<br>
+          </div> 
+          <p class="rights-text">
+            Copyright © 2025 Created By Kaushikee Mishra All Rights Reserved.
+          </p>
+          <br />
+          <p>
+            <img src="images/icon/location.png" /> Pranveer Singh Institute of Technology <br /> Kanpur
+          </p>
+          <br />
+          <p>
+            <img src="images/icon/phone.png" /> +91 12345-67890<br /><img
+              src="images/icon/mail.png"
+            />&nbsp; kaushikeemishra1@gmail.com
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

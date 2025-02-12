@@ -1,0 +1,36 @@
+/* Styles for the fixed music player widget */
+#music-player {
+    position: fixed;
+    bottom: 20px;  /* Adjust as needed */
+    right: 20px;   /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;  /* Ensure it stays on top */
+    width: 250px;   /* Adjust size as needed */
+  }
+  
+  /* Style for the recently played text */
+  #recently-played {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Style for the shuffle button in the playlist */
+  #shuffle-btn {
+    padding: 10px 15px;
+    margin: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #shuffle-btn:hover {
+    background-color: #0056b3;
+  }
+  
